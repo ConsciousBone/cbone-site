@@ -10,13 +10,45 @@ import '../styles/global.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body class="min-h-screen flex items-center justify-center">
-		<div class="w-full max-w-md rounded-2xl bg-white/30 dark:bg-black/30 backdrop-blur-xl border border-white/20 dark:border-black/20 text-gray-900 dark:text-gray-300 shadow-xl p-6 flex flex-col items-center text-center">
-			<a href="/">Home</a>
-        	<a href="/about">About</a>
-        	<a href="/blog">Blog</a>
-
-			<h1>My Astro Site</h1>
+	<body class="min-h-screen flex flex-col items-center">
+		<div class="
+			flex-1 w-full flex items-center justify-center
+		">
+			<div class="
+			flex-1 w-full flex items-center justify-center
+			w-full max-w-md rounded-2xl
+			bg-white/60 dark:bg-black/50 backdrop-blur-xl
+			border border-white/20 dark:border-black/20
+			text-gray-800 dark:text-gray-300 shadow-xl
+			p-6 flex flex-col items-center text-center
+			">
+				<h1 class="text-4xl title-font">Hey! I'm Evan</h1>
+				<h2 class="title-font">Software developer and student.</h2>
+				<div class="">
+					<a href="https://example.com/">Projects</a>
+					<a href="https://example.com/">Socials</a>
+					<a href="https://example.com/">About</a>
+				</div>
+			</div>
+		</div>
+		<div class="pb-2">
+			<p class="text-xs text-gray-500 text-center">
+				Background image from
+				<a class="underline hover:text-gray-400" href="https://unsplash.com/photos/a-blurry-image-of-a-blue-and-pink-background-XgeZu2jBaVI">
+					Unsplash.
+				</a>
+			</p>
+			<p class="text-xs text-gray-500 text-center">
+				This website is
+				<a class="underline hover:text-gray-400" href="https://github.com/consciousbone/cbone-site">
+					open source!
+				</a>
+			</p>
 		</div>
 	</body>
+	<style>
+		.title-font {
+			font-family: "Rockwell", "Rockwell Nova", "Georgia", "Times New Roman", serif;
+		}
+	</style>
 </html>
