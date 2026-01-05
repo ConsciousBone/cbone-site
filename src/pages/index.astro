@@ -8,7 +8,7 @@ import '../styles/global.css';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Home</title>
 	</head>
 	<body class="min-h-screen flex flex-col items-center">
 		<div class="
@@ -20,14 +20,32 @@ import '../styles/global.css';
 			bg-white/60 dark:bg-black/50 backdrop-blur-xl
 			border border-white/20 dark:border-black/20
 			text-gray-800 dark:text-gray-300 shadow-xl
-			p-6 flex flex-col items-center text-center
+			p-10 flex flex-col items-center text-center
 			">
-				<h1 class="text-4xl title-font">Hey! I'm Evan</h1>
+				<h1 class="text-4xl title-font">Hey! I'm Evan.</h1>
 				<h2 class="title-font">Software developer and student.</h2>
-				<div class="">
-					<a href="https://example.com/">Projects</a>
-					<a href="https://example.com/">Socials</a>
-					<a href="https://example.com/">About</a>
+				<div class="flex flex-wrap justify-center gap-2 pt-4">
+					<a class="
+					px-4 py-2 rounded-lg
+					border border-white/40 dark:border-white/10
+					bg-white/80 dark:bg-black/40
+					text-gray-900 dark:text-gray-200
+					hover:bg-white dark:hover:bg-black/60 transition"
+					href="/projects">Projects</a>
+					<a class="
+					px-4 py-2 rounded-lg
+					border border-white/40 dark:border-white/10
+					bg-white/80 dark:bg-black/40
+					text-gray-900 dark:text-gray-200
+					hover:bg-white dark:hover:bg-black/60 transition"
+					href="/socials">Socials</a>
+					<a class="
+					px-4 py-2 rounded-lg
+					border border-white/40 dark:border-white/10
+					bg-white/80 dark:bg-black/40
+					text-gray-900 dark:text-gray-200
+					hover:bg-white dark:hover:bg-black/60 transition"
+					href="/about">About</a>
 				</div>
 			</div>
 		</div>
