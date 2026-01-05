@@ -1,4 +1,5 @@
 ---
+import LinkButton from '../components/LinkButton.astro';
 import '../styles/global.css';
 ---
 
@@ -25,27 +26,9 @@ import '../styles/global.css';
 				<h1 class="text-4xl title-font">Hey! I'm Evan.</h1>
 				<h2 class="title-font">Software developer and student.</h2>
 				<div class="flex flex-wrap justify-center gap-2 pt-4">
-					<a class="
-					px-4 py-2 rounded-lg
-					border border-white/40 dark:border-white/10
-					bg-white/80 dark:bg-black/40
-					text-gray-900 dark:text-gray-200
-					hover:bg-white dark:hover:bg-black/60 transition"
-					href="/projects">Projects</a>
-					<a class="
-					px-4 py-2 rounded-lg
-					border border-white/40 dark:border-white/10
-					bg-white/80 dark:bg-black/40
-					text-gray-900 dark:text-gray-200
-					hover:bg-white dark:hover:bg-black/60 transition"
-					href="/socials">Socials</a>
-					<a class="
-					px-4 py-2 rounded-lg
-					border border-white/40 dark:border-white/10
-					bg-white/80 dark:bg-black/40
-					text-gray-900 dark:text-gray-200
-					hover:bg-white dark:hover:bg-black/60 transition"
-					href="/about">About</a>
+					<LinkButton href="/projects">Projects</LinkButton>
+					<LinkButton href="/socials">Socials</LinkButton>
+					<LinkButton href="/about">About</LinkButton>
 				</div>
 			</div>
 		</div>
@@ -64,9 +47,4 @@ import '../styles/global.css';
 			</p>
 		</div>
 	</body>
-	<style>
-		.title-font {
-			font-family: "Rockwell", "Rockwell Nova", "Georgia", "Times New Roman", serif;
-		}
-	</style>
 </html>

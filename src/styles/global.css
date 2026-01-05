@@ -7,3 +7,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.title-font {
+	font-family: "Rockwell", "Rockwell Nova", "Georgia", "Times New Roman", serif;
+}
