@@ -1,6 +1,9 @@
 ---
 import LinkButton from '../components/LinkButton.astro';
+import { ClientRouter } from 'astro:transitions';
 import '../styles/global.css';
+
+const pageTitle = "Home";
 ---
 
 <html lang="en">
@@ -9,9 +12,11 @@ import '../styles/global.css';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Home</title>
+		<ClientRouter />
+		<title>{pageTitle}</title>
 	</head>
 	<body class="min-h-screen flex flex-col items-center">
+		<div class="site-bg" transition:persist aria-hidden="true"></div>
 		<div class="
 			flex-1 w-full flex items-center justify-center
 		">

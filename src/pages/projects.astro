@@ -1,6 +1,10 @@
 ---
 import LinkButton from '../components/LinkButton.astro';
+import { ClientRouter } from 'astro:transitions';
 import '../styles/global.css';
+
+const pageTitle = "Projects";
+const subtitleText = "Some subtitle text";
 ---
 
 <html lang="en">
@@ -9,9 +13,11 @@ import '../styles/global.css';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Projects</title>
+        <ClientRouter />
+		<title>{pageTitle}</title>
 	</head>
 	<body class="min-h-screen flex flex-col items-center">
+        <div class="site-bg" transition:persist aria-hidden="true"></div>
 		<div class="
 			flex-1 w-full flex items-center justify-center
 		">
@@ -23,8 +29,8 @@ import '../styles/global.css';
 			    text-gray-800 dark:text-gray-300 shadow-xl
 			    p-10 flex flex-col items-center text-center
 			">
-				<h1 class="text-4xl title-font">Projects</h1>
-				<h2 class="title-font">Some subtitle text.</h2>
+				<h1 class="text-4xl title-font">{pageTitle}</h1>
+				<h2 class="title-font">{subtitleText}</h2>
 				<div class="flex flex-wrap justify-center gap-2 pt-4">
 					<LinkButton href="/projects/searchino">Searchino</LinkButton>
 					<LinkButton href="/projects/searchinolite">Searchino Lite</LinkButton>
